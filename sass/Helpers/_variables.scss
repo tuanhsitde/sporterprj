@@ -1,0 +1,43 @@
+//font size
+$fs-0 : 15px;
+$fs-1 : 18px;
+$fs-2 : 24px;
+$fs-3 : 42px;
+
+
+
+
+
+
+//color
+$color-black-0: #181818;
+$color-brown-0: #8A7350;
+$color-white-0: #fff;
+$color-border-0: rgba(20,23,28,0.05);
+$color-gray-0: #A2A2A2;
+$color-pink-0: #f72585;
+
+//font weight
+$fw-0: normal;
+$fw-1: 600;
+$fw-2: 700;
+$fw-3: 900;
+$fw-4: 500;
+
+//padding
+$pd-0: 10px;
+$pd-1: 20px;
+$pd-3: 40px;
+//margin
+$mg-0: 40px;
+
+//line height
+$lh-0: 2;
+
+//break point
+$breakpoints : (
+    'extra-large': 1200px,
+    'large': 992px,
+    'medium': 768px,
+    'small': 576px,
+);

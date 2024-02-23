@@ -1,0 +1,27 @@
+.seeDetails {
+    .seeDetails__content {
+        background-color: $color-brown-0;
+        color: $color-white-0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .details {
+            padding: $pd-0 0;
+            p {
+                display: inline;
+                @include styleText($color-white-0, $fs-0, $fw-1);
+                padding-right: $pd-0;
+            }
+            a {
+                @include styleText($color-white-0, $fs-0, $fw-1);
+                text-decoration: none;
+                border-bottom: 1px solid $color-white-0;
+                transition: 0.5s;
+                &:hover {
+                    color: $color-black-0;
+                    border-bottom: 1px solid $color-black-0;
+                }
+            }
+        }
+    }
+}

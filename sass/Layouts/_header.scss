@@ -1,0 +1,48 @@
+.header__content {
+    padding: $pd-0;
+    border-bottom: 0.5px solid $color-black-0;
+    @include styleText($color-black-0, $fs-0, $fw-0);
+    .navbar{
+        .header__icon {
+            width: 15%;
+            display: flex;
+            justify-content: space-around;
+        }
+        .navbar-brand {
+            @include styleText($color-black-0,$fs-2,$fw-2);
+            letter-spacing: 1px;
+        }
+        .navbar-nav .nav-item .nav-link {
+            @include styleText($color-black-0,$fs-0,$fw-0);
+            color : $color-black-0;
+        }
+        .navbar-nav .nav-link.active {
+            border-bottom: 1px solid $color-black-0;
+        }
+        .form-control {
+            position: relative;
+            // .form_icon {
+            //     position: absolute;
+            //     right: 50%;
+            //     bottom: 10%;
+            // }
+            &:focus {
+                box-shadow: 0 0 0 0 $color-brown-0;
+                border-color: $color-black-0;
+            }
+        }
+        .header__icon i {
+            @include styleText($color-black-0,$fs-1, $fw-3);
+            width: $fs-2 + 12;
+            height: $fs-2 + 12;
+            border-radius: 50%;
+            background-color: transparent;
+            text-align: center;
+            line-height: $fs-2 + 12;
+            &:hover {
+                background-color: $color-border-0;
+                cursor: pointer;
+            }
+        }
+    }
+}

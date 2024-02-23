@@ -1,0 +1,3 @@
+.btnCarousel {
+    @include styleButton($color-black-0, $color-white-0, $color-black-0, $fs-1, $fw-0, $pd-0, $pd-3);
+}
