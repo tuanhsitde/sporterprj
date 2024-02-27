@@ -1,0 +1,4 @@
+.btnGetVoucher {
+  @include styleButton($color-black-0, $color-white-0, $color-black-0, $fs-0, $fw-1, $pd-0, $pd-1);
+  font-family: "Anta", sans-serif;
+}

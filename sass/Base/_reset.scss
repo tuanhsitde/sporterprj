@@ -10,8 +10,14 @@ body, html {
     font-family: "Montserrat", sans-serif;
     font-size: $fs-0;
 }
-
+::selection {
+    color: $color-pink-0;
+}
 .section {
     margin: $mg-0 0;
+}
+
+.closeAds {
+    display: none;
 }
 

@@ -8,8 +8,14 @@ body, html {
   font-family: "Montserrat", sans-serif;
   font-size: 15px; }
 
+::selection {
+  color: #f72585; }
+
 .section {
   margin: 40px 0; }
+
+.closeAds {
+  display: none; }
 
 .header__content {
   padding: 10px;
@@ -155,5 +161,16 @@ footer {
   padding: 10px 40px;
   cursor: pointer;
   transition: 0.5s; }
+
+.btnGetVoucher {
+  color: #181818;
+  background-color: #fff;
+  border: 1px solid #181818;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: "Anta", sans-serif; }
 
 /*# sourceMappingURL=main.css.map */
