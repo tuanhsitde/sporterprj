@@ -1,0 +1,45 @@
+.detail__content {
+  width: 92%;
+  margin: $mg-0 auto;
+  .col-3 {
+    .nav {
+      display: flex;
+      flex-direction: column;
+      border: transparent;
+      border-right: 2px solid $color-gray-1;
+      .nav-links {
+        border:none;
+        background-color: transparent;
+        @include styleText($color-black-0 , $fs-1 - 2, $fw-1);
+        padding: $pd-0 - 3 0;
+      }
+    }
+  }
+  .col-9 {
+    .detail__title {
+      @include styleText($color-black-0, $fs-2, $fw-1);
+      padding-bottom: $pd-0;
+    }
+    .detail-part {
+      font-family: "Inter", sans-serif;
+      .detail-p {
+        @include styleText($color-black-0, $fs-1, $fw-1);
+      }
+      p {
+        @include styleText($color-black-0, $fs-0, $fw-5);
+        line-height: $lh-0;
+        padding: $pd-0 0;
+        a {
+          @include styleText($color-black-0, $fs-0, $fw-0);
+        }
+        span {
+          @include styleText($color-black-0, $fs-0, $fw-1);
+        }
+      }
+      h5 {
+        @include styleText($color-black-0, $fs-0 - 2, $fw-1);
+        padding: $pd-0 0;
+      }
+    }
+  }
+}

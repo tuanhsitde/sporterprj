@@ -1,0 +1,28 @@
+.assistance {
+  .assistance__content {
+    width: 92%;
+    margin: 0 auto;
+    padding: $pd-3 0;
+    background-color: $color-white-1;
+    .assistance__left {
+      h2 {
+        @include styleText($color-black-0, $fs-2,$fw-1);
+        padding: $pd-3;
+      }
+    }
+    .assistance__right {
+      padding-left: $pd-3;
+      p{
+        @include styleText($color-black-0, $fs-0,$fw-0);
+        a {
+          @include styleText($color-black-0, $fs-0 - 1,$fw-1);
+          text-decoration-thickness: 2px;
+          letter-spacing: 1px;
+        }
+        span {
+          @include styleText($color-black-0, $fs-0 - 3, $fw-0);
+        }
+      }
+    }
+  }
+}

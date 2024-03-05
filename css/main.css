@@ -84,6 +84,47 @@ body, html {
       font-size: 18px;
       font-weight: 15px; }
 
+.assistance .assistance__content {
+  width: 92%;
+  margin: 0 auto;
+  padding: 40px 0;
+  background-color: #FAFAFA; }
+  .assistance .assistance__content .assistance__left h2 {
+    color: #181818;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 40px; }
+  .assistance .assistance__content .assistance__right {
+    padding-left: 40px; }
+    .assistance .assistance__content .assistance__right p {
+      color: #181818;
+      font-size: 15px;
+      font-weight: normal; }
+      .assistance .assistance__content .assistance__right p a {
+        color: #181818;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration-thickness: 2px;
+        letter-spacing: 1px; }
+      .assistance .assistance__content .assistance__right p span {
+        color: #181818;
+        font-size: 12px;
+        font-weight: normal; }
+
+.updating {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .updating .updating__content i {
+    font-size: 80px; }
+  .updating .updating__content h1 {
+    color: #A2A2A2;
+    font-size: 42px;
+    font-weight: 600; }
+
 footer {
   background-color: #181818;
   color: #fff; }
@@ -100,11 +141,12 @@ footer {
       footer .footer__content .footer__support .footer__support--left ul {
         list-style: none;
         padding-left: 0; }
-        footer .footer__content .footer__support .footer__support--left ul li {
+        footer .footer__content .footer__support .footer__support--left ul li a {
           color: #A2A2A2;
           font-size: 15px;
           font-weight: normal;
-          line-height: 2; }
+          line-height: 2;
+          text-decoration: none; }
     footer .footer__content .footer__contact .footer__contact--icon {
       font-size: 24px; }
       footer .footer__content .footer__contact .footer__contact--icon a {
@@ -172,5 +214,111 @@ footer {
   cursor: pointer;
   transition: 0.5s;
   font-family: "Anta", sans-serif; }
+
+.detail__content {
+  width: 92%;
+  margin: 40px auto; }
+  .detail__content .col-3 .nav {
+    display: flex;
+    flex-direction: column;
+    border: transparent;
+    border-right: 2px solid #E6E7EB; }
+    .detail__content .col-3 .nav .nav-links {
+      border: none;
+      background-color: transparent;
+      color: #181818;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 7px 0; }
+  .detail__content .col-9 .detail__title {
+    color: #181818;
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 10px; }
+  .detail__content .col-9 .detail-part {
+    font-family: "Inter", sans-serif; }
+    .detail__content .col-9 .detail-part .detail-p {
+      color: #181818;
+      font-size: 18px;
+      font-weight: 600; }
+    .detail__content .col-9 .detail-part p {
+      color: #181818;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 2;
+      padding: 10px 0; }
+      .detail__content .col-9 .detail-part p a {
+        color: #181818;
+        font-size: 15px;
+        font-weight: normal; }
+      .detail__content .col-9 .detail-part p span {
+        color: #181818;
+        font-size: 15px;
+        font-weight: 600; }
+    .detail__content .col-9 .detail-part h5 {
+      color: #181818;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 10px 0; }
+
+.login .login__content {
+  width: 40%;
+  margin: 0 auto; }
+  .login .login__content .nav-tabs {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    .login .login__content .nav-tabs .nav-item {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .login .login__content .nav-tabs .nav-item .nav-link {
+        width: 100%;
+        border: none;
+        margin-bottom: 0;
+        color: #181818;
+        font-size: 18px;
+        font-weight: 700; }
+        .login .login__content .nav-tabs .nav-item .nav-link.active {
+          border-bottom: 3px solid #8A7350; }
+  .login .login__content #loginPage #login form {
+    font-family: "Inter", sans-serif; }
+    .login .login__content #loginPage #login form #email, .login .login__content #loginPage #login form #password {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0; }
+    .login .login__content #loginPage #login form #remem {
+      text-align: left;
+      margin-top: 30px;
+      width: 18px;
+      height: 18px; }
+    .login .login__content #loginPage #login form #rememberMe {
+      color: #181818;
+      font-size: 18px;
+      font-weight: normal; }
+    .login .login__content #loginPage #login form label {
+      margin-top: 20px;
+      color: #181818;
+      font-size: 12px;
+      font-weight: 600; }
+      .login .login__content #loginPage #login form label span {
+        color: #880808; }
+    .login .login__content #loginPage #login form button {
+      display: block;
+      width: 100%;
+      color: #3b4048;
+      background-color: #bdc1c5;
+      border: 1px solid #bdc1c5;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 10px 0;
+      cursor: pointer;
+      transition: 0.5s;
+      border-radius: 2px;
+      margin: 40px 0; }
 
 /*# sourceMappingURL=main.css.map */
