@@ -1,6 +1,5 @@
 .login {
   .login__content {
-
     width: 40%;
     margin: 0 auto;
     .nav-tabs {
@@ -46,7 +45,7 @@
             @include styleText($color-black-0,$fs-1, $fw-0);
           }
           label {
-            margin-top: $pd-1;
+            margin-top: $pd-3;
             @include styleText($color-black-0,$fs-0 - 3, $fw-1);
             span {
               color: $color-red-0;
@@ -58,7 +57,139 @@
             @include styleButton($color-black-1, $color-gray-2, $color-gray-2,$fs-1,$fw-1,$pd-0,0);
             border-radius: 2px;
             margin: $pd-3 0;
+            transition: 0.5s;
+            &:hover {
+              background-color: $color-white-0;
+              border: 1px solid $color-black-0;
+              color: #000;
+            }
+            a {
+              text-decoration: none;
+              color: $color-black-0;
+              padding: 2% 45%;
+            }
           }
+        }
+        .login__confirm {
+          @include styleText($color-black-0, $fs-0 - 2, $fw-0);
+          a {
+            text-decoration: none;
+            border-bottom: 2px solid $color-gray-0;
+            color: $color-gray-0;
+            transition: 0.5s;
+            &:hover {
+              border-bottom: 2px solid $color-black-0;
+              color: $color-black-0;
+            }
+          }
+        }
+        .forgotPassword {
+          font-family: "Inter", sans-serif;
+          text-decoration: none;
+          @include styleText($color-black-0, $fs-0 - 2, $fw-1);
+          border-bottom: 2px solid $color-gray-0;
+          transition: 0.5s;
+          margin-top: $mg-0 - 20;
+          &:hover {
+            border-bottom: 2px solid $color-black-0;
+          }
+        }
+        .modal {
+          top: 65%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          .modal-dialog {
+            .modal-content {
+              padding: $pd-1;
+              .btn-close {
+                text-align: right;
+                margin-left: 95%;
+              }
+              .modal-header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                .modal-title {
+                  font-family: "Inter", sans-serif;
+                  @include styleText($color-black-0, $fs-1 + 2, $fw-1);
+                  text-align: center;
+                }
+              }
+              .modal-body {
+                form {
+                  input {
+                    display: block;
+                    width: 100%;
+                    padding: $pd-0 - 2;
+                    margin-top: $pd-0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    #createAccount {
+      form {
+        font-family: "Inter", sans-serif;
+        #firstName, #lastName, #emailCreateAccount, #passwordCreateAccount {
+          display: block;
+          width: 100%;
+          padding: $pd-0;
+          margin: $pd-0 - 5 0;
+        }
+        label {
+          margin-top: $pd-3;
+          @include styleText($color-black-0,$fs-0 - 3, $fw-1);
+          span {
+            color: $color-red-0;
+          }
+        }
+        #addMe {
+          text-align: left;
+          margin-top: $pd-3 - 10;
+          width: 18px;
+          height: 18px;
+        }
+        .addMe {
+          @include styleText($color-black-0,$fs-1, $fw-0);
+        }
+      }
+      .create__confirm {
+        margin: $pd-3 - 20 0;
+        @include styleText($color-black-0, $fs-0 - 2, $fw-0);
+        a {
+          text-decoration: none;
+          border-bottom: 2px solid $color-gray-0;
+          color: $color-gray-0;
+          transition: 0.5s;
+
+          &:hover {
+            border-bottom: 2px solid $color-black-0;
+            color: $color-black-0;
+          }
+        }
+      }
+      button {
+        display: block;
+        width: 100%;
+        @include styleButton($color-black-1, $color-gray-2, $color-gray-2,$fs-1,$fw-1,$pd-0,0);
+        border-radius: 2px;
+        margin: $pd-3 0;
+        transition: 0.5s;
+        overflow: hidden;
+        &:hover {
+          background-color: $color-white-0;
+          border: 1px solid $color-black-0;
+          color: #000;
+        }
+        a {
+          text-decoration: none;
+          @include styleText($color-black-0, $fs-1, $fw-1);
+          color: $color-black-0;
+          padding: 2% 40%;
         }
       }
     }

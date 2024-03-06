@@ -82,7 +82,7 @@
                         <div class="header__icon">
                             <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                             <a href=""><i class="fa-regular fa-heart"></i></a>
-                            <a href=""><i class="fa-regular fa-user"></i></a>
+                            <a href="./login.html"><i class="fa-regular fa-user"></i></a>
                         </div>
                     </div>
                 </div>
@@ -105,15 +105,55 @@
                     <form action="">
                         <label for="email">EMAIL<span>*</span>
                         </label>
-                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="email" placeholder="Email" required>
                         <label for="password">PASSWORD <span>*</span></label>
-                        <input type="text" id="password" placeholder="Password">
+                        <input type="password" id="password" placeholder="Password" required>
                         <input type="checkbox"  id="remem">
                         <span id="rememberMe"> &nbsp; Remember on this computer</span>
-                        <button type="submit">LOGIN</button>
+                        <button type="submit"><a href="./index.html">LOGIN</a></button>
                     </form>
+                    <p class="login__confirm">By continuing, I confirm that I have read and accept the <a href="./returnAndExchange.html">Privacy Policy</a></p>
+                    <!-- Button trigger modal -->
+                    <a type="button" class="forgotPassword" data-bs-toggle="modal" data-bs-target="#forgetPassword">
+                        FORGOTTEN YOUR PASSWORD?
+                    </a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="forgetPassword" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">FORGOTTEN YOUR PASSWORD?</h1>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Please provide your account email address to receive an email to reset your password.</p>
+                                    <form action="">
+                                        <label for="emailForget">Email <span>*</span></label>
+                                        <input type="text" placeholder="Email" id="emailForget" required>
+                                        <button type="submit">SUBMIT</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="createAccount" role="tabpanel">ấefwefewq</div>
+                <div class="tab-pane fade" id="createAccount" role="tabpanel">
+                    <form action="">
+                        <label for="firstName">FIRST NAME <span>*</span></label>
+                        <input type="text" id="firstName" placeholder="First Name">
+                        <label for="lastName">LAST NAME <span>*</span></label>
+                        <input type="text" id="lastName" placeholder="Last Name">
+                        <label for="emailCreateAccount">EMAIL <span>*</span></label>
+                        <input type="text" id="emailCreateAccount" placeholder="Email">
+                        <label for="passwordCreateAccount">PASSWORD <span>*</span></label>
+                        <input type="password" id="passwordCreateAccount" placeholder="Password">
+                        <input type="checkbox" id="addMe">
+                        <span class="addMe"> &nbsp;Add me to the Sporter mailing list</span>
+                    </form>
+                    <p class="create__confirm">By continuing, I confirm that I have read and accept the <a href="./returnAndExchange.html">Privacy Policy</a></p>
+                    <button type="submit"><a href="./index.html">REGISTER</a></button>
+                </div>
             </div>
         </div>
     </section>
