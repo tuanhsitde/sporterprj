@@ -1,0 +1,94 @@
+.qty-input {
+  color: $color-black-0;
+  background: $color-white-0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  .product-qty,
+  .qty-count {
+    background: transparent;
+    color: inherit;
+    font-weight: bold;
+    font-size: inherit;
+    border: none;
+    display: inline-block;
+    min-width: 0;
+    height: 2.5rem;
+    line-height: 1;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .product-qty {
+    width: 50px;
+    min-width: 0;
+    display: inline-block;
+    text-align: center;
+    appearance: textfield;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      appearance: none;
+      margin: 0;
+    }
+  }
+
+  .qty-count {
+    padding: 0;
+    cursor: pointer;
+    width: 2.5rem;
+    font-size: 1.25em;
+    text-indent: -100px;
+    overflow: hidden;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: "";
+      height: 2px;
+      width: 10px;
+      position: absolute;
+      display: block;
+      background: $color-black-0;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    &--minus {
+      border-right: 1px solid $color-gray-0;
+    }
+    &--add {
+      border-left: 1px solid $color-gray-0;
+      &:after {
+        transform: rotate(90deg);
+      }
+    }
+
+    &:disabled {
+      color: $color-gray-0;
+      background: $color-gray-4;
+      cursor: not-allowed;
+      border-color: transparent;
+
+      &:before,
+      &:after {
+        background: $color-gray-0;
+      }
+    }
+  }
+}
+
+
+.qty-input {
+  border-radius: 4px;
+  box-shadow: 0 1px 2px -0.9em rgba(#000, 0.7);
+  border: 1px solid $color-gray-0;
+  width: 25%;
+  padding: 0;
+}

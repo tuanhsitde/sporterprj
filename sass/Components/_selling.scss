@@ -77,6 +77,17 @@
           }
         }
       }
+      .selling__quantity {
+        display: flex;
+        align-items: center;
+        p {
+          display: inline;
+          padding: 0;
+          width: 40%;
+          margin: 0 $pd-0;
+          @include styleText($color-black-0, $fs-1, $fw-1);
+        }
+      }
     }
   }
 }
