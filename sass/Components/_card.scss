@@ -1,0 +1,20 @@
+.card {
+  width: 90%;
+  margin: 0 auto;
+  .card-img-top {
+    border-bottom: 1px solid $color-gray-0;
+  }
+  .card-body {
+    .card-title {
+      @include styleText($color-black-0, $fs-0 , $fw-1);
+    }
+    .card-text {
+
+    }
+    .card-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

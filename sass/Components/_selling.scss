@@ -17,17 +17,17 @@
         margin-top: $pd-0;
         padding: $pd-0 - 5 $pd-1;
       }
-      .size .col-7 {
+      .size-color .col-9 {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: $mg-0 0;
-        .selling-btn-size {
-          width: 40px;
-          height: 40px;
-          display: inline-block;
-          @include styleButton($color-black-0, $color-gray-3, $color-gray-3, $fs-0, $fw-1, 0, 0);
-          border-radius: 2px;
+        select {
+          width: 40%;
+          height: 35px;
+          text-align: center;
+          border: 1px solid $color-black-0;
+          border-radius: 3px;
         }
       }
       .selling__price {
