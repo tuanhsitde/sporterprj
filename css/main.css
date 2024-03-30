@@ -257,6 +257,8 @@ footer {
 .mainClb .mainClb__content {
   width: 90%;
   margin: 0 auto; }
+  .mainClb .mainClb__content .row {
+    margin-bottom: 40px; }
 
 .seeDetails .seeDetails__content {
   background-color: #8A7350;
@@ -292,6 +294,23 @@ footer {
   padding: 10px 40px;
   cursor: pointer;
   transition: 0.5s; }
+
+.buyNowbtn {
+  color: #fff;
+  background-color: #181818;
+  border: 1px solid #181818;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 4px;
+  text-decoration: none; }
+  .buyNowbtn:hover {
+    background-color: #fff;
+    color: #181818;
+    border-color: #181818; }
 
 .btnGetVoucher {
   color: #181818;
@@ -477,6 +496,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    .card .card-body .card-flex .card-text {
+      margin-bottom: 0; }
 
 .detail__content {
   width: 92%;

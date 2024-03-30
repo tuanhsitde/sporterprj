@@ -8,13 +8,13 @@
     .card-title {
       @include styleText($color-black-0, $fs-0 , $fw-1);
     }
-    .card-text {
-
-    }
     .card-flex {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      .card-text {
+        margin-bottom: 0;
+      }
     }
   }
 }

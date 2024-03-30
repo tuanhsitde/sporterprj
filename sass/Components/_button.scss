@@ -1,3 +1,15 @@
 .btnCarousel {
     @include styleButton($color-black-0, $color-white-0, $color-black-0, $fs-1, $fw-0, $pd-0, $pd-3);
 }
+
+.buyNowbtn {
+    @include styleButton($color-white-0, $color-black-0, $color-black-0, $fs-0, $fw-1, $pd-0 - 5, $pd-0 + 5);
+    transition: 0.5s;
+    border-radius: 4px;
+    text-decoration: none;
+    &:hover {
+        background-color: $color-white-0;
+        color: $color-black-0;
+        border-color: $color-black-0;
+    }
+}

@@ -2,5 +2,8 @@
   .mainClb__content {
     width: 90%;
     margin: 0 auto;
+    .row {
+      margin-bottom: $mg-0;
+    }
   }
 }
