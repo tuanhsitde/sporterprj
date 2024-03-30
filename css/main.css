@@ -51,9 +51,12 @@ header {
       color: #181818;
       font-size: 15px;
       font-weight: normal;
-      color: #181818; }
-    header .header__content .navbar .nav-link.active {
-      border-bottom: 1px solid #181818; }
+      color: #181818;
+      transition: 0.2s; }
+      header .header__content .navbar .navbar-nav .nav-item .nav-link:hover {
+        border-bottom: 1px solid #181818; }
+      header .header__content .navbar .navbar-nav .nav-item .nav-link.active {
+        border-bottom: 1px solid #181818; }
     header .header__content .navbar .form-control {
       position: relative; }
       header .header__content .navbar .form-control:focus {

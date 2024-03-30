@@ -23,9 +23,13 @@ header {
             .navbar-nav .nav-item .nav-link {
                 @include styleText($color-black-0,$fs-0,$fw-0);
                 color : $color-black-0;
-            }
-            .nav-link.active {
-                border-bottom: 1px solid $color-black-0;
+                transition: 0.2s;
+                &:hover {
+                    border-bottom: 1px solid $color-black-0;
+                }
+                &.active {
+                    border-bottom: 1px solid $color-black-0;
+                }
             }
             .form-control {
                 position: relative;
