@@ -14,4 +14,16 @@
     cursor: pointer;
     transition: 0.5s;
   }
+
+@mixin responsive($screen) {
+  @if map-has-key($map: $breakpoints, $key: $screen) {
+    $value: map-get($map:$breakpoints, $key:$screen);
+    @media screen and (max-width: $value) {
+      @content
+    }
+  }
+  @else {
+    @warn "`{$screen}` is not a valid for `#{$breakpoints}`.";
+  }
+}
   

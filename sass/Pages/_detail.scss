@@ -43,3 +43,12 @@
     }
   }
 }
+
+@include responsive('large') {
+  .detail__content {
+    width: 100%;
+  }
+  .detail__content .col-3 {
+    display: none;
+  }
+} 

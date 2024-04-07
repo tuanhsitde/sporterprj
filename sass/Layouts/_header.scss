@@ -4,9 +4,11 @@ header {
     left: 0;
     width: 100%;
     z-index: 99999;
-    background: $color-white-0;
-    .header__content {
+    background-color: $color-white-0;
 
+    height: $header-height;
+    .header__content {
+        background-color: $color-white-0;
         padding: $pd-0;
         border-bottom: 0.5px solid $color-black-0;
         @include styleText($color-black-0, $fs-0, $fw-0);
@@ -20,6 +22,9 @@ header {
                 @include styleText($color-black-0,$fs-2,$fw-2);
                 letter-spacing: 1px;
             }
+            .navbar-toggler:focus {
+                box-shadow: none;
+            }
             .navbar-nav .nav-item .nav-link {
                 @include styleText($color-black-0,$fs-0,$fw-0);
                 color : $color-black-0;
@@ -27,10 +32,10 @@ header {
                 &:hover {
                     border-bottom: 1px solid $color-black-0;
                 }
-                &.active {
-                    border-bottom: 1px solid $color-black-0;
-                }
             }
+            //.navbar-nav .nav-item .nav-link.active {
+            //    border-bottom: 2px solid $color-black-0;
+            //}
             .form-control {
                 position: relative;
                 // .form_icon {
@@ -54,6 +59,35 @@ header {
                 &:hover {
                     background-color: $color-border-0;
                     cursor: pointer;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1015px) {
+        .header__content {
+            .navbar {
+                .navbar-brand {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    @include responsive('large') {
+        .header__content {
+            .navbar {
+                .navbar-collapse {
+                    background-color: $color-white-0;
+                    width: 100%;
+                    text-align: center;
+                }
+                .navbar-brand {
+                    font-size: 20px;
+                }
+                form input{
+                    display: none;
+                }
+                .header__icon {
+                    display: none;
                 }
             }
         }

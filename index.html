@@ -24,6 +24,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+    <!--inter-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
@@ -33,6 +36,14 @@
     <!--owl carousel-->
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!--swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../sporterprj/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../sporterprj/img/favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../sporterprj/img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <!-- css -->
     <link rel="stylesheet" href="css/main.css">
@@ -52,44 +63,37 @@
         <div class="header__content">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                <a class="navbar-brand me-4" href="#">SPORTER</a>
+                <a class="navbar-brand me-4" href="./index.html">SPORTER</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mb-2 mb-lg-0 me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Áo đội tuyển</a>
+                            <a class="nav-link active" aria-current="page" href="#national">Áo đội tuyển</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#aoClb">Áo câu lạc bộ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Yoga</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Gym</a>
+                            <a class="nav-link" href="#shoes">Giày đá bóng</a>
                         </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Sản phẩm khác
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Đồ bơi</a></li>
-                                    <li><a class="dropdown-item" href="#">Phụ kiện thể thao</a></li>
+                                    <li><a class="dropdown-item" href="../sporterprj/html/updating.html">Đồ bơi</a></li>
+                                    <li><a class="dropdown-item" href="../sporterprj/html/updating.html">Phụ kiện thể thao</a></li>
                                 </ul>
                             </li>
                         </ul>
                         <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search"
-                        aria-label="Search">
-                        <!-- <div class="form_icon">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div> -->
-                        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                        aria-label="Search" id="header-search">
                         </form>
                         <div class="header__icon">
-                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="./html/checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
                             <a href=""><i class="fa-regular fa-heart"></i></a>
                             <a href="html/login.html"><i class="fa-regular fa-user"></i></a>
                         </div>
@@ -99,6 +103,85 @@
         </div>
     </header>
 
+    <!--search-->
+    <section class="search" id="searchArea">
+        <div class="search__content row">
+            <div class="col-6 search-trending">
+                <h3>Trending now</h3>
+                <ul class="trend-list nav flex-column">
+                    <li class="trend-item">
+                        <a href="./html/aomutrangxanh.html" class="trend-link">
+                            <img src="./img/mutrangxanh/mu1.jpg" alt="">
+                            <p>Áo đấu Manchester United trắng xanh</p>
+                        </a>
+                    </li>
+                    <li class="trend-item">
+                        <a href="./html/aopsg.html" class="trend-link">
+                            <img src="./img/psg/psg1.jpg" alt="">
+                            <p>Áo đấu Paris Saint German trắng</p>
+                        </a>
+                    </li>
+                    <li class="trend-item">
+                        <a href="./html/arsxanh.html" class="trend-link">
+                            <img src="./img/arsxanh/ar1.jpg" alt="">
+                            <p>Áo đấu Arsenal xanh</p>
+                        </a>
+                    </li>
+                    <li class="trend-item">
+                        <a href="./html/aoJuve.html" class="trend-link">
+                            <img src="./img/juventus/juve1.jpg" alt="">
+                            <p>Áo đấu Juventus trắng đen</p>
+                        </a>
+                    </li>
+                    <li class="trend-item">
+                        <a href="./html/aoArsdo.html" class="trend-link">
+                            <img src="./img/arsenal/ars1.jpeg" alt="">
+                            <p>Áo đấu Arsenal đỏ</p>
+                        </a>
+                    </li>
+                    <li class="trend-item">
+                        <a href="./html/aorealtrang.html" class="trend-link">
+                            <img src="./img/realtrang/real1.jpg" alt="">
+                            <p>Áo đấu Real Madrid trắng</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-5 search-suggest">
+                <h3>We suggest</h3>
+                <ul class="trend-list nav flex-column">
+                    <li class="trend-item">
+                        <a href="./html/aomutrangxanh.html" class="trend-link">
+                            <img src="./img/mutrangxanh/mu1.jpg" alt="">
+                            <p>Áo đấu Manchester United trắng xanh</p>
+                        </a>
+                    </li>
+                    <li class="trend-item">
+                        <a href="./html/aopsg.html" class="trend-link">
+                            <img src="./img/psg/psg1.jpg" alt="">
+                            <p>Áo đấu Paris Saint German trắng</p>
+                        </a>
+                    </li>
+                    <li class="trend-item">
+                        <a href="./html/arsxanh.html" class="trend-link">
+                            <img src="./img/arsxanh/ar1.jpg" alt="">
+                            <p>Áo đấu Arsenal xanh</p>
+                        </a>
+                    </li>
+                    <li class="trend-item">
+                        <a href="./html/aoJuve.html" class="trend-link">
+                            <img src="./img/juventus/juve1.jpg" alt="">
+                            <p>Áo đấu Juventus trắng đen</p>
+                        </a>
+                    </li>
+            </div>
+            <div class="col-1 close-search">
+                <i class="fa-solid fa-xmark" id="close-search"></i>
+            </div>
+        </div>
+    </section>
+
+
     <!-- carousel -->
     <section class="carousel section">
         <div class="carousel__content container-fluid">
@@ -106,7 +189,6 @@
                 <h2>40% OFF TRAINING STYLES+ SELECT DUFFEL SHIRTS ONLY $20</h2>
                 <h5>GET MOVING, GET SAVING, ENDS 6/28</h5>
                 <p>EXCLUSIONS APPLY. WHILE SUPPLIES LAST. DUFFELS A $40 VALUE.</p>
-                <button class="btnCarousel">SHOP NOW</button>
             </div>
         </div>
     </section>
@@ -119,21 +201,22 @@
         </div>
         <div class="fbteam__content">
             <div class="row">
-                <div class="col-10">
+                <div class="col-12 col-left">   
                     <div class="owl-carousel owl-theme club__carousel">
                         <div class="item club-item">
                             <div class="club-item__img">
-                                <img src="img/realtrang/real1.jpg" alt="real" class="img-fluid">
-                                    <div class="club-item__detail">
-                                        <button>
-                                            <a href="html/aorealtrang.html">Buy now...</a>
-                                        </button>
-                                    </div>
+                                <img src="img/arsenal/ars1.jpeg" alt="ars" class="img-fluid">
+                                <div class="club-item__detail">
+                                    <button>
+                                        <a href="html/aoArsdo.html">Buy now...</a>
+                                    </button>
+                                </div>
                             </div>
+
                         </div>
                         <div class="item club-item">
                             <div class="club-item__img">
-                                <img src="img/arsenal/ars1.jpeg" alt="ars" class="img-fluid">
+                                <img src="img/arsxanh/ar1.jpg" alt="ars" class="img-fluid">
                                 <div class="club-item__detail">
                                     <button>
                                         <a href="html/aoArsdo.html">Buy now...</a>
@@ -164,46 +247,447 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2">
-                    <button><a href="html/aoCLB.html">Xem thêm <i class="fa-solid fa-arrow-right"></i></a></button>
+                <div class="col-12 col-right">
+                    <!-- <button><a href="html/aoCLB.html">Xem thêm <i class="fa-solid fa-arrow-right"></i></a></button> -->
+                    <a href="./html/aoCLB.html">Xem thêm ...</a>
                 </div>
             </div>
         </div>
     </section>
     <!--getVoucher-->
-<!--    <section class="getVoucher">-->
-<!--        &lt;!&ndash; Button trigger modal &ndash;&gt;-->
-<!--        <button type="button" class="btnGetVoucher" data-bs-toggle="modal" data-bs-target="#btnGetVoucher">-->
-<!--            GET 40% OFF <span id="closeX"><i class="fa-solid fa-xmark"></i></span>-->
-<!--        </button>-->
 
-<!--        &lt;!&ndash; Modal &ndash;&gt;-->
-<!--        <div class="modal fade" id="btnGetVoucher" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
-<!--            <div class="modal-dialog">-->
-<!--                <div class="modal-content">-->
-<!--                    <div class="modal-header">-->
-<!--                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>-->
-<!--                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
-<!--                    </div>-->
-<!--                    <div class="modal-body">-->
-<!--                        ...-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
 
     <!--ao doi tuyen quoc gia-->
+    <section class="national" id="national">
+        <div class="title">
+            <h3>
+                <a href="#">Áo đội tuyển quốc gia </a>
+            </h3>
+        </div>
+        <div class="national__content">
+            <div class="owl-carousel owl-theme national__carousel">
+                <div class="item">
+                    <div class="national-img">
+                        <div class="national-img-detail">
+                            <img src="./img/vn/vn1.jpg" alt="">
+                            <div class="national-item-detail">
+                                <button>
+                                    <a href="./html/checkout.html" target="_self">Buy now...</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="national-price">
+                            <h6> 1.899.000 đ <span>2.500.000đ</span></h6>
+                            <div>
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart"></i></span>
+                            </div>
+                        </div>
+                        <p>Áo chính hãng sân khách đội đuyển Việt Nam 2023</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="national-img">
+                        <div class="national-img-detail">
+                            <img src="./img/jap/nhat1.jpg" alt="">
+                            <div class="national-item-detail">
+                                <button>
+                                    <a href="./html/checkout.html">Buy now...</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="national-price">
+                            <h6> 1.899.000 đ <span>2.500.000đ</span></h6>
+                            <div>
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span><i class="fa-regular fa-heart heart"></i></span>
+                            </div>
+                        </div>
+                        <p>Áo chính hãng sân nhà đội đuyển Nhật Bản 2023</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="national-img">
+                        <div class="national-img-detail">
+                            <img src="./img/crt/crt1.jpg" alt="">
+                            <div class="national-item-detail">
+                                <button>
+                                    <a href="./html/checkout.html">Buy now...</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="national-price">
+                            <h6> 1.899.000 đ <span>2.500.000đ</span></h6>
+                            <div>
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart"></i></span>
+                            </div>
+                        </div>
+                        <p>Áo chính hãng sân nhà đội đuyển Croatia 2023</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="national-img">
+                        <div class="national-img-detail">
+                            <img src="./img/itl/y1.jpg" alt="">
+                            <div class="national-item-detail">
+                                <button>
+                                    <a href="./html/checkout.html">Buy now...</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="national-price">
+                            <h6> 1.899.000 đ <span>2.500.000đ</span></h6>
+                            <div>
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart"></i></span>
+                            </div>
+                        </div>
+                        <p>Áo chính hãng sân nhà đội đuyển Italia 2024</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="national-img">
+                        <div class="national-img-detail">
+                            <img src="./img/vndo/vn5.jpeg" alt="">
+                            <div class="national-item-detail">
+                                <button>
+                                    <a href="./html/checkout.html">Buy now...</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="national-price">
+                            <h6> 1.899.000 đ <span>2.500.000đ</span></h6>
+                            <div>
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart"></i></span>
+                            </div>
+                        </div>
+                        <p>Áo chính hãng sân nhà đội đuyển Việt Nam 2024</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="national-img">
+                        <div class="national-img-detail">
+                            <img src="./img/arg/arg1.jpg" alt="">
+                            <div class="national-item-detail">
+                                <button>
+                                    <a href="./html/checkout.html">Buy now...</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="national-price">
+                            <h6> 1.899.000 đ <span>2.500.000đ</span></h6>
+                            <div>
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart"></i></span>
+                            </div>
+                        </div>
+                        <p>Áo chính hãng đội đuyển Argentina 2024</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="national-img">
+                        <div class="national-img-detail">
+                            <img src="./img/bi/bi1.jpg" alt="">
+                            <div class="national-item-detail">
+                                <button>
+                                    <a href="./html/checkout.html">Buy now...</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="national-price">
+                            <h6> 1.899.000 đ <span>2.500.000đ</span></h6>
+                            <div>
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart"></i></span>
+                            </div>
+                        </div>
+                        <p>Áo chính hãng sân nhà đội đuyển Bỉ 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!--shoesCarousel-->
+    <section class="shoes__carousel">
+        <div class="shoesCarousel__content">
+            <img src="./img/giay/giaycarousel.jpeg" alt="">
+            <div class="shoes-overlay">
+                <h2>Giày bóng đá và phụ kiện thể thao chính hãng</h2>
+                <p>Ở Sporter chúng tôi cung cấp giày bóng đá chính hãng được phân phối trực tiềp từ Nike, Adidas, Mizuno.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--shoes-->
+    <section class="shoes section" id="shoes">
+        <div class="title">
+            <h3>
+                <a href="#">Giày đá bóng</a>
+            </h3>
+        </div>
+        <div class="shoes__content">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                    <div class="shoes-img">
+                        <div class="shoes-img-detail">
+                            <img src="./img/giay/giaydabong1.jpg" alt="" class="img-fluid">
+                            <div class="shoes-item-detail">
+                                <button>
+                                    <a href="./html/checkout.html">Buy now...</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="shoes-price">
+                            <h6> 4.899.000 đ</h6>
+                            <div>
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart"></i></span>
+                            </div>
+                        </div>
+                        <p>GIÀY ĐÁ BÓNG NIKE AIR ZOOM MERCURIAL VAPOR 15 ACADEMY MG LUMINOUS - PINK BLAST/VOLT/GRIDIRON DJ5631-605</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                    <div class="shoes-img">
+                        <div class="shoes-img-detail">
+                            <img src="./img/giay/giaydabong4.jpg" alt="" class="img-fluid">
+                            <div class="shoes-item-detail">
+                                <button>
+                                    <a href="./html/checkout.html">Buy now...</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="shoes-price">
+                            <h6> 4.899.000 đ</h6>
+                            <div>
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart"></i></span>
+                            </div>
+                        </div>
+                        <p>GIÀY ĐÁ BÓNG NIKE AIR ZOOM MERCURIAL VAPOR 15 PRO TF READY - WHITE/BLACK/BRIGHT CRIMSON DJ5605-600</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                    <div class="shoes-img">
+                        <div class="shoes-img-detail">
+                            <img src="./img/giay/giaydabong7.jpg" alt="" class="img-fluid">
+                            <div class="shoes-item-detail">
+                                <button>
+                                    <a href="./html/checkout.html">Buy now...</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="shoes-price">
+                            <h6> 4.899.000 đ</h6>
+                            <div>
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart"></i></span>
+                            </div>
+                        </div>
+                        <p>GIÀY ĐÁ BÓNG NIKE AIR ZOOM MERCURIAL VAPOR 15 ACADEMY MG LUMINOUS - PINK BLAST/VOLT/GRIDIRON DJ5631-605</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                    <div class="shoes-img">
+                        <div class="shoes-img-detail">
+                            <img src="./img/giay/giaydabong11.jpg" alt="" class="img-fluid">
+                            <div class="shoes-item-detail">
+                                <button>
+                                    <a href="./html/checkout.html">Buy now...</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="shoes-price">
+                            <h6> 4.899.000 đ</h6>
+                            <div>
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart"></i></span>
+                            </div>
+                        </div>
+                        <p>GIÀY ĐÁ BÓNG NIKE AIR ZOOM MERCURIAL SUPERFLY 9 ACADEMY MG MAD READY - YELLOW/BLACK DJ5625-700</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row show-more">
+                <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                    <div class="shoes-img">
+                        <div class="shoes-img-detail">
+                            <img src="./img/giay/giaydabong12.jpg" alt="" class="img-fluid">
+                            <div class="shoes-item-detail">
+                                <button>
+                                    <a href="./html/checkout.html">Buy now...</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="shoes-price">
+                            <h6> 4.899.000 đ</h6>
+                            <div>
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart"></i></span>
+                            </div>
+                        </div>
+                        <p>GIÀY ĐÁ BÓNG NIKE PHANTOM LUNA II ACADEMY TF MAD READY - WHITE/BLACK/GOLD FJ2566-100</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                    <div class="shoes-img">
+                        <div class="shoes-img-detail">
+                            <img src="./img/giay/giaydabong13.jpg" alt="" class="img-fluid">
+                            <div class="shoes-item-detail">
+                                <button>
+                                    <a href="./html/checkout.html">Buy now...</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="shoes-price">
+                            <h6> 4.899.000 đ</h6>
+                            <div>
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart"></i></span>
+                            </div>
+                        </div>
+                        <p>GIÀY ĐÁ BÓNG ADIDAS X CRAZYFAST LEAGUE TF SOLAR ENERGY - SOLAR YELLOW/CORE BLACK/FOOTWEAR WHITE KIDS IF0681</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                    <div class="shoes-img">
+                        <div class="shoes-img-detail">
+                            <img src="./img/giay/giaydabong14.jpg" alt="" class="img-fluid">
+                            <div class="shoes-item-detail">
+                                <button>
+                                    <a href="./html/checkout.html">Buy now...</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="shoes-price">
+                            <h6> 4.899.000 đ</h6>
+                            <div>
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart"></i></span>
+                            </div>
+                        </div>
+                        <p>GIÀY ĐÁ BÓNG MIZUNO MORELIA SALA CLUB TF - WHITE/RED Q1GB240391</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                    <div class="shoes-img">
+                        <div class="shoes-img-detail">
+                            <img src="./img/giay/giaydabong15.jpg" alt="" class="img-fluid">
+                            <div class="shoes-item-detail">
+                                <button>
+                                    <a href="./html/checkout.html">Buy now...</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="shoes-price">
+                            <h6> 4.899.000 đ</h6>
+                            <div>
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart"></i></span>
+                            </div>
+                        </div>
+                        <p>GIÀY ĐÁ BÓNG MIZUNO MORELIA SALA MADE IN JAPAN TF DYNA - SAFETY YELLOW/FIERY CORAL Q1GB240045</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                    <div class="shoes-img">
+                        <div class="shoes-img-detail">
+                            <img src="./img/giay/giaydabong16.jpg" alt="" class="img-fluid">
+                            <div class="shoes-item-detail">
+                                <button>
+                                    <a href="./html/checkout.html">Buy now...</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="shoes-price">
+                            <h6> 4.899.000 đ</h6>
+                            <div>
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart"></i></span>
+                            </div>
+                        </div>
+                        <p>GIÀY ĐÁ BÓNG NIKE AIR ZOOM MERCURIAL VAPOR 15 ACADEMY TF PEAK READY - HYPER TURQUOISE/FUCHSIA DREAM/BLACK/WHITE KIDS DJ5621-300</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                    <div class="shoes-img">
+                        <div class="shoes-img-detail">
+                            <img src="./img/giay/giaydabong17.jpg" alt="" class="img-fluid">
+                            <div class="shoes-item-detail">
+                                <button>
+                                    <a href="./html/checkout.html">Buy now...</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="shoes-price">
+                            <h6> 4.899.000 đ</h6>
+                            <div>
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart"></i></span>
+                            </div>
+                        </div>
+                        <p>GIÀY ĐÁ BÓNG NIKE PHANTOM GX ACADEMY TF PEAK READY - HYPER TURQ/BLACK/FUCHIA DREAM/WHITE DD9477-300</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                    <div class="shoes-img">
+                        <div class="shoes-img-detail">
+                            <img src="./img/giay/giaydabong18.jpg" alt="" class="img-fluid">
+                            <div class="shoes-item-detail">
+                                <button>
+                                    <a href="./html/checkout.html">Buy now...</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="shoes-price">
+                            <h6> 4.899.000 đ</h6>
+                            <div>
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart"></i></span>
+                            </div>
+                        </div>
+                        <p>GIÀY ĐÁ BÓNG MIZUNO ALPHA ELITE AS TF PRISM GOLD - WHITE/GOLD/BLACK P1GD246250</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 col-xxl-3">
+                    <div class="shoes-img">
+                        <div class="shoes-img-detail">
+                            <img src="./img/giay/giaydabong19.jpg" alt="" class="img-fluid">
+                            <div class="shoes-item-detail">
+                                <button>
+                                    <a href="./html/checkout.html">Buy now...</a>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="shoes-price">
+                            <h6> 4.899.000 đ</h6>
+                            <div>
+                                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                                <span><i class="fa-regular fa-heart" id="heart"></i></span>
+                            </div>
+                        </div>
+                        <p>
+                            GIÀY ĐÁ BÓNG PUMA FUTURE ULTIMATE CAGE TT GEAR UP - PERSIAN BLUE/PUMA WHITE/PRO GREEN 107364-03</p>
+                    </div>
+                </div>
+            </div>
+            <div class="shoes-more">
+                <button id="show-more">Xem thêm...</button>
+            </div>
+        </div>
+    </section>
 
     <!-- footer -->
     <footer>
         <div class="footer__content">
             <div class="footer__support">
                 <div class="row">
-                    <div class="col-9">
+                    <div class="col-md-12 col-lg-12 col-xl-9 col-xxl-9">
                         <div class="row footer__support--left">
-                            <div class="col-4">
+                            <div class="col-sm-12 col-md-4 col-xl-4">
                                 <h5>SUPPORT</h5>
                                 <ul>
                                     <li><a href="html/returnAndExchange.html">Contact Us</a></li>
@@ -217,7 +701,7 @@
                                     <li><a href="html/updating.html">Cookie Settings</a></li>
                                 </ul>
                             </div>
-                            <div class="col-4">
+                            <div class="col-sm-12 col-md-4 col-xl-4">
                                 <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5>
                                 <ul>
                                     <li><a href="html/returnAndExchange.html">FAQ</a></li>
@@ -230,7 +714,7 @@
                                     <li><a href="html/updating.html">Promotion Exclusions</a></li>
                                 </ul>
                             </div>
-                            <div class="col-4">
+                            <div class="col-sm-12 col-md-4 col-xl-4">
                                 <h5>ABOUT</h5>
                                 <ul>
                                     <li><a href="html/updating.html">Company</a></li>
@@ -244,7 +728,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-3 col-xl-3 col-xxl-3 stay-update">
                         <h5>STAY TO UPDATE</h5>
                         <a href="html/login.html"><p>Sign Up For Email</p></a>
                     </div>
@@ -252,7 +736,7 @@
             </div>
             <div class="footer__contact">
                 <div class="row">
-                    <div class="footer__contact--icon col-6">
+                    <div class="footer__contact--icon col-lg-12 col-xl-6">
                         <a href="https://github.com/tuanhsitde" target="_blank"><i class="fa-brands fa-github"></i></a> 
                         <a href="https://twitter.com/NguynTunAn54179" target="_blank"><i class="fa-brands fa-x-twitter"></i></a> 
                         <a href="https://www.pinterest.com/nonoanhne2910/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
@@ -260,7 +744,7 @@
                         <a href="https://www.facebook.com/profile.php?id=100040992888590" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                     </div>
                     
-                    <div class="col-6 copyRight">
+                    <div class="col-xl-6 copyRight">
                         <div>
                             <p>Design & Developer by <span><a href="https://github.com/tuanhsitde">Tuanh Nguyen</a></span></p>
                             <p>COPYRIGHT © 2024</p>
@@ -287,18 +771,55 @@
             nav:true,
             responsive:{
                 0:{
-                    items:5
+                    items:1
                 },
-                600:{
-                    items:5
+                700:{
+                    items:2
+                },
+                800:{
+                    items:3
                 },
                 1000:{
                     items:4
                 }
             }
         })
+        $('.national__carousel').owlCarousel({
+            loop:false,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                900:{
+                    items:3
+                },
+                1180:{
+                    items:4
+                   },
+                1350:{
+                    items:5
+                }
+            }
+        })
+    </script>
+
+    <!--swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            scrollbar: {
+                el: ".swiper-scrollbar",
+                hide: true,
+            },
+        });
     </script>
     <!--js-->
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/firebase.js"></script>
 </body>
 </html>

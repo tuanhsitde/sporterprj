@@ -23,7 +23,7 @@ footer {
                     }
                 }
             }
-            .col-3 {
+            .stay-update {
                 a {
                     text-decoration: none;
                     color: $color-gray-0;
@@ -57,5 +57,25 @@ footer {
                 }
             }
         }
+    }
+}
+@include responsive('extra-large') {
+    footer .footer__content .footer__support .stay-update {
+        display: none;
+    }
+}
+@include responsive('extra-large') {
+    footer .footer__content .footer__contact .copyRight {
+        display: none;
+    }
+    footer .footer__content .footer__contact .row .footer__contact--icon {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+}
+@include responsive('medium') {
+    footer .footer__content .footer__support .footer__support--left {
+        text-align: center;
     }
 }

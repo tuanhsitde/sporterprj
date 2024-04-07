@@ -12,13 +12,16 @@
 
 //Layouts
 @import "Layouts/header";
+@import "Layouts/search";
 @import "Layouts/carousel";
 @import "Layouts/assistance";
 @import "Layouts/updating";
 @import "Layouts/footer";
 @import "Layouts/club";
+@import "Layouts/national";
 @import "Layouts/mainclb";
-
+@import "Layouts/shoesCarousel";
+@import "Layouts/shoes";
 
 
 //Components
@@ -36,5 +39,6 @@
 @import "Pages/home";
 @import "Pages/detail";
 @import "Pages/login";
+@import "Pages/checkout";
 
 //Theme

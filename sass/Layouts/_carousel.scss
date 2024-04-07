@@ -23,4 +23,67 @@
             }
         }
     }
+
+    @include responsive('large') {
+        .carousel__content {
+            height: 400px;
+           .carousel__item {
+               width: 70%;
+               h2 {
+                   font-size: $fs-4;
+               }
+               h5 {
+                   padding: $pd-0 0;
+                   font-size: $fs-1;
+               }
+               p {
+                   font-size: $fs-0;
+               }
+           }
+        }
+    }
+    @include responsive('medium') {
+        .carousel__content {
+            height: 300px;
+            .carousel__item {
+                width: 85%;
+                h2 {
+                    font-size: 24px;
+                }
+                h5 {
+                    font-size: 16px;
+                }
+                p {
+                    font-size: 14px;
+                }
+                button {
+                    font-size: 15px;
+                    padding: 5px 15px;
+                }
+            }
+        }
+    }
+    @include responsive('small') {
+        .carousel__content {
+            height: 280px;
+            .carousel__item {
+                width: 100%;
+                h2 {
+                    font-size: 20px;
+                }
+                h5 {
+                    padding: 5px 0;
+                    font-size: 16px;
+                }
+                p {
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                }
+                button {
+                    font-size: 15px;
+                    padding: 3px 10px;
+                }
+            }
+        }
+    }
 }

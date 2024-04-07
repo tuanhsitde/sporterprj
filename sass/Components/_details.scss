@@ -1,4 +1,9 @@
 .seeDetails {
+    z-index: 150;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
     .seeDetails__content {
         background-color: $color-brown-0;
         color: $color-white-0;
@@ -22,6 +27,17 @@
                     border-bottom: 1px solid $color-black-0;
                 }
             }
+            @include responsive('small') {
+                p {
+                    @include styleText($color-white-0, $fs-0 - 3, $fw-1);
+                }
+                a {
+                    @include styleText($color-white-0, $fs-0 - 3, $fw-1);
+                }
+            }
         }
+
     }
+
+
 }

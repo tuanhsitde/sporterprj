@@ -25,7 +25,9 @@ $color-black-1: #3b4048;
 $color-gray-2: #bdc1c5;
 $color-gray-3: #E3E3E5;
 $color-gray-4: #f2f2f2;
-
+$color-gray-5: #EEEEEE;
+$color-green-0: #4C7D05;
+$color-black-2: #6C6C6C;
 //font weight
 $fw-0: normal;
 $fw-1: 600;
@@ -33,6 +35,7 @@ $fw-2: 700;
 $fw-3: 900;
 $fw-4: 500;
 $fw-5: 400;
+$fw-6: 200;
 
 //padding
 $pd-0: 10px;
@@ -52,3 +55,7 @@ $breakpoints : (
     'medium': 768px,
     'small': 576px,
 );
+
+//height
+$header-height: 80px;
+$detail-height: 42px;
